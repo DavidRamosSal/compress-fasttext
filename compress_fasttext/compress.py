@@ -151,7 +151,7 @@ def make_new_fasttext_model(
 ):
     # cls = cls or CompressedFastTextKeyedVectors
     # let the model be the ultimate type before saving+loading it
-    cls = cls or gensim.models.fasttext.FastTextKeyedVectors
+    cls = cls or FastTextKeyedVectors
     new_ft = cls(
         vector_size=ft.vector_size,
         min_n=ft.min_n,
